@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mega Travel Contact Agent</title>
+  <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: sans-serif;
+        margin: 0 auto;
+        width: 1200px;
+    }
+
+    header {
+        align-items: center;
+        display: flex;
+        margin-bottom: 0px;
+        background: #add8e6;        
+    }
+    
+    .product-cards {
+<!--      display: grid;
+      grid-template-columns: auto auto auto auto;  -->
+      margin-bottom: 30px;
+    }  
+            
+    nav {
+        margin-left: 30px;
+    }
+        
+    nav ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+    }
+    
+    nav a:hover {
+      color: red;
+    }
+    
+    .breadcrumb {
+      display: flex;
+      list-style: none;
+      background: lightgrey;
+    }
+
+    .breadcrumb li {
+      padding: 10px;
+    }
+
+    .breadcrumb li:after {
+      content: "/";
+      margin-left: 20px;
+    }
+
+    .breadcrumb li:last-child:after {
+      content: "";
+    }
+
+    .breadcrumb a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    
+    .intro {
+      margin: 30px 0;
+      padding: 0 10px;
+<!--      width: 50%; -->
+    }
+
+    .intro h1 {
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      line-height: 1.5;
+    }
+    
+    @keyframes productCards {
+      from {
+        background-color: white;
+        color: black;
+        border-width: 1px;
+        padding: 15px;
+        }
+      to {
+        background-color: black;
+        color: white;
+        border-width: 5px;
+        padding: 11px;
+        }
+      }
+
+    .product-card {
+      border: 1px solid black;
+      padding: 15px;
+      margin: 10px;
+    }
+    
+     .product-card:hover {
+       animation: productCards 2s;
+       color: white;
+       border: 5px solid red;
+       background: black;
+    }
+
+    .product-card a {
+      color: black;
+      text-decoration: none;
+    }
+    
+    .product-card a:hover {
+      color: white;
+    }
+
+    .product-card img {
+      width: 100%;
+    }
+
+    .product-card h2 {
+      margin: 30px 0 15px;
+    }
+
+    .product-card p {
+      line-height: 1.5;
+    }
+
+    .original-price {
+      color: grey;
+      text-transform: uppercase;
+    }
+
+    .current-price span {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .saving {
+      color: green;
+    }
+    
+    @media (min-width: 768px) {
+    	header {
+    		align-items: center;
+        display: flex;
+    	}
+    	nav {
+    		background: transparent;
+    		margin-top: 0;
+    		margin-left: 30px;
+    	}
+    	nav a {
+    		color: black;
+    		position: relative;
+      		top: 0;
+      		transition: top .5s, color .5s;
+    	}
+    	nav a:hover {
+    		top: -10px;
+    		text-decoration: none;
+    		color: red;
+    	}
+    	.intro {
+    		width: 50%;
+    	}
+    	.product-cards {
+      		display: grid;
+      		grid-template-columns: auto auto auto auto;
+      	}
+      	.product-card {
+      		display: inline-block;
+      	}
+    }
+
+    @media only print {
+    	nav {
+    		display: none;
+    	}
+    }
+    
+    hr {
+      height: 25px;
+      background-color: #d3d3d3;
+      border-width:0;
+    }
+    
+    footer p (
+      background-color: black;
+      color: white;
+    }
+        
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="megatravellogo.png" alt="" width="400" height="225" style="float:left" />
+  </header>
+  <hr>
+    
+  <nav>
+     <ul>
+        <li><a href="MegaTravel.html">Home</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="Contact.html">Contact Agent</a></li>
+     </ul>
+  </nav>
+  
+  <section class="intro">
+    <h1>Contact an Agent</h1>
+    <p>We would love to know more about your travel plans. Please fill out this contact form to get in touch with a travel agent.
+    </p>
+  </section>  
+  
+  <footer>
+      <p style="color:white; background-color: black;">Copyright Protected. All rights reserved.<br><br>
+      MEGA TRAVELS<br>mega@Travels.com</p>
+  </footer>
+  
+</body>
+</html>
