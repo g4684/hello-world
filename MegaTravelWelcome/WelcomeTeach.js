@@ -13,7 +13,7 @@ function Greeting() {
         var type = "Good Morning";
     }
     else if (hours >= 12 && hours <= 17) {
-        if (hours = 17 && minutes >= 1) {
+        if (hours == 17 && minutes >= 1) {
             var type = "Good Evening";
         }
         else {
@@ -26,7 +26,7 @@ function Greeting() {
   
         // This is for the image
     if (hours >= 6 && hours <= 18)  {
-        if (hours = 18 && minutes >= 1) {
+        if (hours == 18 && minutes >= 1) {
             var imgtext = "moon_30x30.png";
         }
         else {
