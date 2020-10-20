@@ -287,165 +287,166 @@ class ReservationForm extends React.Component {
 
     render() {
         return (
-            // React.createElement("main", null,
-            React.createElement("form", {
-                id: 'ContactForm',
-                // method: 'post', 
-                // action:'',
-                onSubmit: this.handleSubmit,
-                onReset: this.resetFormFields
-                },
-                // First Name input
-                React.createElement("label", null,
-                    React.createElement("p", null, "First Name",
-                        React.createElement("span", {id: "required"}, "*")),
-                    React.createElement("input", {
-                        type: "text",
-                        name: "firstname",
-                        value: this.state.firstname,
-                        onChange: this.handleChange,
-                        required: true
-                    },)),
-                React.createElement("br", null),
-                React.createElement("br", null),
-
-                // Last Name input
-                React.createElement("label", null,
-                    React.createElement("p", null, "Last Name",
-                     React.createElement("span", {id: "required"}, "*")),
-                    React.createElement("input", {
-                        type: "text",
-                        name: "lastname",
-                        value: this.state.lastname,
-                        onChange: this.handleChange,
-                        required: true
-                },)),                
-                React.createElement("br", null),
-                React.createElement("br", null),
-
-                // Email input
-                React.createElement("label", null,
-                    React.createElement("p", null, "Email",
-                        React.createElement("span", {id: "required"}, "*")),
-                    React.createElement("input", {
-                        type: "email",
-                        name: "userEmail",
-                        value: this.state.userEmail,
-                        onChange: this.handleChange,
-                        required: true
-                 },)),                            
-                React.createElement("br", null),
-                React.createElement("br", null),
-
-                // Phone Number input
-                React.createElement("label", null,
-                    React.createElement("p", null, "Phone Number",
-                        React.createElement("span", {id: "required"}, "*")),
-                    React.createElement("input", {
-                        type: "tel",
-                        name: "userPhone",
-                        placeholder: "123-456-7890",
-                        pattern: "[0-9]{3}-[0-9]{3}-[0-9]{4}",
-                        value: this.state.userPhone,
-                        onChange: this.handleChange,
-                        required: true
-                 },)),                            
-                React.createElement("br", null),
-                React.createElement("br", null),
-
-                // How many children and adults traveling
-                // Adults
-                // React.createElement("p", null, "Number of Adults & Children Traveling:"),
-                React.createElement("label", null,
-                    React.createElement("p", null, "Number of Adults & Children Traveling:"),               
-                    React.createElement("p", null, "# Adults",
-                        React.createElement("span", {id: "required"}, "*")),
-                    React.createElement("input", {
-                        type: "number",
-                        name: "adults",
-                        value: this.state.adults,
-                        onChange: this.handleChange,
-                        required: true
-                 },)),
-                React.createElement("br", null),                  
-                // Children
-                React.createElement("label", null,
-                    React.createElement("p", null, "# Children",
-                        React.createElement("span", {id: "required"}, "*")),
-                    React.createElement("input", {
-                        type: "number",                      
-                        name: "children",
-                        value: this.state.children,
-                        onChange: this.handleChange,
-                        required: true
-                 },)),                                            
-                React.createElement("br", null),
-                React.createElement("br", null),
-
-                // Travel Date input
-                React.createElement("label", null,
-                    React.createElement("p", null, "Departure Date",
-                        React.createElement("span", {id: "required"}, "*")),
-                    React.createElement("input", {
-                        type: "date",
-                        name: "travelDate",
-                        value: this.state.travelDate,
-                        onChange: this.handleChange,
-                        required: true
-                 },)),                            
-                React.createElement("br", null),
-                React.createElement("br", null),
-
-                // Return Date input
-                React.createElement("label", null,
-                    React.createElement("p", null, "Return Date",
-                        React.createElement("span", {id: "required"}, "*")),
-                    React.createElement("input", {
-                        type: "date",
-                        name: "returnDate",
-                        value: this.state.returnDate,
-                        onChange: this.handleChange,
-                        required: true
-                 },)),                            
-                React.createElement("br", null),
-                React.createElement("br", null),                
-
-                // Dropdown Menu to Select destination
-                React.createElement("label", null,
-                    React.createElement("p", null, "Select your Destination and Activities:",
-                        React.createElement("span", {id: "required"}, "*")),               
-                    React.createElement("select", {
-                        value: this.state.destination,
-                        name: "destination",
-                        onChange: this.handleChange,
-                        required: true
+            React.createElement("div", null,
+                React.createElement("form", {
+                    id: 'ContactForm',
+                    // method: 'post', 
+                    // action:'',
+                    onSubmit: this.handleSubmit,
+                    onReset: this.resetFormFields
                     },
+                    // First Name input
+                    React.createElement("label", null,
+                        React.createElement("p", null, "First Name",
+                            React.createElement("span", {id: "required"}, "*")),
+                        React.createElement("input", {
+                            type: "text",
+                            name: "firstname",
+                            value: this.state.firstname,
+                            onChange: this.handleChange,
+                            required: true
+                        },)),
+                    React.createElement("br", null),
+                    React.createElement("br", null),
 
-                        React.createElement("option", { value: "" }, "-- Select a destination --"),
-                        React.createElement("option", { value: "Maldives" }, "Maldives, South Asia"),
-                        React.createElement("option", { value: "New Zealand" }, "New Zealand"),
-                        React.createElement("option", { value: "Venice" }, "Venice, Italy"),
-                        React.createElement("option", { value: "Cancun" }, "Cancun, Mexico")),
+                    // Last Name input
+                    React.createElement("label", null,
+                        React.createElement("p", null, "Last Name",
+                         React.createElement("span", {id: "required"}, "*")),
+                        React.createElement("input", {
+                            type: "text",
+                            name: "lastname",
+                            value: this.state.lastname,
+                            onChange: this.handleChange,
+                            required: true
+                    },)),                
+                    React.createElement("br", null),
+                    React.createElement("br", null),
 
-                React.createElement("br", null),
+                    // Email input
+                    React.createElement("label", null,
+                        React.createElement("p", null, "Email",
+                            React.createElement("span", {id: "required"}, "*")),
+                        React.createElement("input", {
+                            type: "email",
+                            name: "userEmail",
+                            value: this.state.userEmail,
+                            onChange: this.handleChange,
+                            required: true
+                     },)),                            
+                    React.createElement("br", null),
+                    React.createElement("br", null),
 
-                //Create checkboxes based on destination choice
-                this.activityList(),
+                    // Phone Number input
+                    React.createElement("label", null,
+                        React.createElement("p", null, "Phone Number",
+                            React.createElement("span", {id: "required"}, "*")),
+                        React.createElement("input", {
+                            type: "tel",
+                            name: "userPhone",
+                            placeholder: "123-456-7890",
+                            pattern: "[0-9]{3}-[0-9]{3}-[0-9]{4}",
+                            value: this.state.userPhone,
+                            onChange: this.handleChange,
+                            required: true
+                     },)),                            
+                    React.createElement("br", null),
+                    React.createElement("br", null),
 
-                React.createElement("br", null),
-                React.createElement("br", null),
+                    // How many children and adults traveling
+                    // Adults
+                    // React.createElement("p", null, "Number of Adults & Children Traveling:"),
+                    React.createElement("label", null,
+                        React.createElement("p", null, "Number of Adults & Children Traveling:"),               
+                        React.createElement("p", null, "# Adults",
+                            React.createElement("span", {id: "required"}, "*")),
+                        React.createElement("input", {
+                            type: "number",
+                            name: "adults",
+                            value: this.state.adults,
+                            onChange: this.handleChange,
+                            required: true
+                     },)),
+                    React.createElement("br", null),                  
+                    // Children
+                    React.createElement("label", null,
+                        React.createElement("p", null, "# Children",
+                            React.createElement("span", {id: "required"}, "*")),
+                        React.createElement("input", {
+                            type: "number",                      
+                            name: "children",
+                            value: this.state.children,
+                            onChange: this.handleChange,
+                            required: true
+                     },)),                                            
+                    React.createElement("br", null),
+                    React.createElement("br", null),
 
-                React.createElement("input", {
-                     type: "submit",
-                     value: "Submit Form"
-                    }
-                ),
-                React.createElement("span", null, "    "),
-                React.createElement("input", {
-                    type: "reset",
-                    value: "Clear Form"
-                   }
-               ),
+                    // Travel Date input
+                    React.createElement("label", null,
+                        React.createElement("p", null, "Departure Date",
+                            React.createElement("span", {id: "required"}, "*")),
+                        React.createElement("input", {
+                            type: "date",
+                            name: "travelDate",
+                            value: this.state.travelDate,
+                            onChange: this.handleChange,
+                            required: true
+                     },)),                            
+                    React.createElement("br", null),
+                    React.createElement("br", null),
+
+                    // Return Date input
+                    React.createElement("label", null,
+                        React.createElement("p", null, "Return Date",
+                            React.createElement("span", {id: "required"}, "*")),
+                        React.createElement("input", {
+                            type: "date",
+                            name: "returnDate",
+                            value: this.state.returnDate,
+                            onChange: this.handleChange,
+                            required: true
+                     },)),                            
+                    React.createElement("br", null),
+                    React.createElement("br", null),                
+
+                    // Dropdown Menu to Select destination
+                    React.createElement("label", null,
+                        React.createElement("p", null, "Select your Destination and Activities:",
+                            React.createElement("span", {id: "required"}, "*")),               
+                        React.createElement("select", {
+                            value: this.state.destination,
+                            name: "destination",
+                            onChange: this.handleChange,
+                            required: true
+                        },
+
+                            React.createElement("option", { value: "" }, "-- Select a destination --"),
+                            React.createElement("option", { value: "Maldives" }, "Maldives, South Asia"),
+                            React.createElement("option", { value: "New Zealand" }, "New Zealand"),
+                            React.createElement("option", { value: "Venice" }, "Venice, Italy"),
+                            React.createElement("option", { value: "Cancun" }, "Cancun, Mexico")),
+
+                    React.createElement("br", null),
+
+                    //Create checkboxes based on destination choice
+                    this.activityList(),
+
+                    React.createElement("br", null),
+                    React.createElement("br", null),
+
+                    React.createElement("input", {
+                         type: "submit",
+                         value: "Submit Form"
+                        }
+                    ),
+                    React.createElement("span", null, "    "),
+                    React.createElement("input", {
+                        type: "reset",
+                        value: "Clear Form"
+                       }
+                   ),
+                )
             )
         ));
     }
