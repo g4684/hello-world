@@ -151,16 +151,6 @@ if (count($activities) === 5){
       echo $value . "<br>";
     }
 
-    // echo count($activities) . "<br><br>";
-
-    // echo 'First Activity: ' . $activity1 . "<br>";
-    // echo 'Second Activity: ' . $activity2 . "<br>";
-    // echo 'Third Activity: ' . $activity3 . "<br>";
-    // echo 'Fourth Activity: ' . $activity4 . "<br>";
-    // echo 'Fifth Activity: ' . $activity5 . "<br>";
-    // ?>
-
-    <?php // sqltest.php
     require_once 'megalogin.php';
     $conn = new mysqli($hn, $un, $pw, $db);
     if ($conn->connect_error) die($conn->connect_error);
@@ -170,10 +160,10 @@ if (count($activities) === 5){
     $result = $conn->query($query);
     if (!$result) echo "INSERT failed: $query<br>" .
     $conn->error . "<br><br>";
-    // $result->close();
-    // $conn->close();
-    ?>
 
+    // $result->close();
+    $conn->close();
+    ?>
 
 </div>
 <br>
